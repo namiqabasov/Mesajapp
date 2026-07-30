@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "MesajApp",
+    "slug": "mesajapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.namiqabasov.mesajapp",
+      "permissions": [
+        "RECORD_AUDIO",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "56f4310b-72de-488d-a2c2-413ba4446d08"
+      }
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Səs mesajı göndərmək üçün mikrofon icazəsi tələb olunur."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Şəkil göndərmək üçün qalereya icazəsi tələb olunur."
+        }
+      ]
+    ]
+  }
+}

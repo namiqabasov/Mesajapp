@@ -1,0 +1,8 @@
+{
+  "name": "namiq-messenger-monorepo",
+  "private": true,
+  "scripts": {
+    "app:dev": "npm --prefix app run start",
+    "admin:dev": "npm --prefix admin run dev"
+  }
+}
