@@ -1,15 +1,15 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "main": "index.web.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web",
-    "build": "vite build"
+    "web": "expo start --web"
   },
   "dependencies": {
+    "@babel/runtime": "^7.20.0",
     "@expo/metro-config": "^0.18.11",
     "@expo/metro-runtime": "~3.2.3",
     "@react-native-async-storage/async-storage": "^1.23.1",
@@ -30,9 +30,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@vitejs/plugin-react": "^4.0.0",
-    "vite": "^5.0.0"
+    "@babel/core": "^7.20.0"
   },
   "private": true
 }
