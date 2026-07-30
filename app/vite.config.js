@@ -11,5 +11,13 @@ export default defineConfig({
     alias: {
       'react-native': 'react-native-web',
     },
+    extensions: ['.web.tsx', '.web.ts', '.web.js', '.tsx', '.ts', '.js'],
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
   },
 });
